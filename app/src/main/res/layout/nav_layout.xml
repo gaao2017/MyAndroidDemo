@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="#72ca98"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/icon_image"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/nav_icon"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="mars8341@163.com"
+        android:id="@+id/tv_username"
+        android:textColor="#ffffff"
+        android:textSize="14sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/tv_mail" android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:layout_above="@+id/tv_username"
+        android:text="Mars8341"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

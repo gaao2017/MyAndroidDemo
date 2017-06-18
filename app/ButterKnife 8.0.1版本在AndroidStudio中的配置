@@ -1,0 +1,28 @@
+ButterKnife 8.0.1版本在AndroidStudio中的配置
+
+1.Project的build.gradle文件中增加classpath
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.1.0'
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+    }
+}
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+2.在Module的build.gradle文件中增加plugin
+
+apply plugin: 'com.neenbedankt.android-apt'
+3.在Dependencies中增加下面两句
+
+compile 'com.jakewharton:butterknife:8.0.1'
+apt 'com.jakewharton:butterknife-compiler:8.0.1'
